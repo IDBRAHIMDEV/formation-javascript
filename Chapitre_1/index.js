@@ -405,3 +405,43 @@ names.forEach(persons)
 let myElement = document.querySelector('.persons')
 
 myElement.innerHTML = html;
+
+const myCourses = [
+    { title: "Angular", price: 45 },
+    { title: "ReactJS", price: 35 },
+    { title: "VueJS", price: 40 },
+];
+
+// Object 
+let user = { 
+    firstName: "Mohamed",
+    lastName: "IDBRAHIM",
+    age: 35,
+    email: "idbrahimdev@gmail.com",
+    active: true,
+    courses: myCourses,
+    login() {
+        console.log('log with this user .', this)
+    },
+    logout: () => {
+        console.log("logout with this user", this)
+    },
+    showCourses: function() {
+        this.courses.forEach(course => console.log(course.title, course.price))
+    }
+}
+
+console.log(user.showCourses())
+
+//  console.log(user.login())
+//  console.log(user.logout())
+
+// user.email = "mouad@gmail.com";
+// console.log(user)
+
+// console.log(user['age'])
+
+// user['age'] = 40
+
+// console.log(user)
+
