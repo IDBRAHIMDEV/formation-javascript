@@ -43,25 +43,32 @@
 // let days = hours / 24;
 // console.log("Days : ", Math.round(days))
 
-const clock = document.querySelector('.clock');
+// const clock = document.querySelector('.clock');
 
-const myOclock = () => {
+// const myOclock = () => {
 
-    let now = new Date();
+//     let now = new Date();
 
-    let hour = now.getHours();
-    let minute = now.getMinutes();
-    let second = now.getSeconds();
+//     let hour = now.getHours();
+//     let minute = now.getMinutes();
+//     let second = now.getSeconds();
 
-    let html = `
-      <span>${ hour }</span> :
-      <span>${ minute }</span> :
-      <span>${ second }</span>
-    `
+//     let html = `
+//       <span>${ hour }</span> :
+//       <span>${ minute }</span> :
+//       <span>${ second }</span>
+//     `
 
-    clock.innerHTML = html
-} 
+//     clock.innerHTML = html
+// } 
 
 
- setInterval(myOclock, 1000)
+//  setInterval(myOclock, 1000)
 
+
+// let now = new Date()
+// let other = new Date(7845121225)
+
+// console.log(dateFns.isToday(now));
+
+// console.log(dateFns.differenceInHours(now, other))
