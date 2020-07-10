@@ -2,13 +2,29 @@ run();
 
 async function run() {
     
-console.log('before')
+    console.log('before')
 
-let user = await getUser(10);
-console.log(" je suis la : ",user)
+    try {
+        
+        let user = await getUser(10);
+        console.log(" je suis la : ",user)
+    
+        let products = await getProducts(user.id)
+        console.log(products)
 
-console.log('between')
-console.log('after')
+        fetch('https://jsonplaceholder.typicode.com/posts')
+          .then(res => res.json())
+          .then(posts => console.log(posts))
+          .catch(err => console.warn(err))
+        console.log(posts)
+
+
+    } catch (error) {
+        console.log(error)
+    }
+      
+    console.log('between')
+    console.log('after')
 }
 
 function getUser(id) {
@@ -47,6 +63,7 @@ function getProducts(userId) {
     })
 
 }
+
 
 
 // let p = new Promise((resolve, reject) => {
