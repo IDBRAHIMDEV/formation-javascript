@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container my-5">
+        
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <h3 class="my-3 text-center"><span class="badge badge-info">Bright Coding Courses</span></h3>
+
+                <form>
+                    <div class="input-group">
+                        <input required id="course" placeholder="Add new Course" type="text" class="form-control" >
+                        <div class="input-group-append">
+                            <input type="submit" class="btn btn-outline-secondary">
+                        </div>
+                    </div>
+                </form>
+        
+                <ul class="list-group mt-2">
+                   
+                </ul>
+            </div>
+        </div>
+
+    
+    </div>
+
+
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCpiTYwJiRVMztaGXj-2PdOkolrpvaPXLk",
+    authDomain: "courses-a0a7a.firebaseapp.com",
+    databaseURL: "https://courses-a0a7a.firebaseio.com",
+    projectId: "courses-a0a7a",
+    storageBucket: "courses-a0a7a.appspot.com",
+    messagingSenderId: "89320353996",
+    appId: "1:89320353996:web:7215e0fcc2f6994e8c5269"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script> 
+
+<script src="script.js"></script>
+</body>
+</html>
